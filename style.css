@@ -1,0 +1,47 @@
+
+  body{
+    background-color: rgb(21, 18, 24);
+  }
+
+  .contaier{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+
+
+.h1{
+    color: white;
+    font-size: 52px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.textarea{
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(227, 220, 208);
+    font-size: 30px;
+    border-radius:10px;
+    border: 2px solid tomato;
+    
+}
+
+.btn-click{
+    border: 1px solid mediumorchid;
+    width:200px;
+    font-size: 30px;
+     padding: 10px;
+     margin-top: 20px;
+     font-weight: bold;
+     border-radius:10px;
+     background-color: darkcyan;
+     
+}
+.btn-click:hover{
+    background-color: #08921f;
+}

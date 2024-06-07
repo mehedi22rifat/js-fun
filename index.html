@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="contaier">
+    <div class="h1"> voice regoration</div>
+    <textarea class="textarea" placeholder="voice regoration" name="" id="textBox"></textarea>
+    <div>
+        <button onclick="voice()" class="btn-click">Click to space</button>
+    </div>
+</div>
+
+ <script>
+
+     function voice(){
+        let recognition = new webkitSpeechRecognition()
+        recognition.lang="en-GB";
+        recognition.onresult = function(event){
+            console.log(event)
+            document.getElementById('textBox').value =
+             event.results[0][0].transcript;
+        }
+        recognition.start();
+     }
+
+ </script>
+</body>
+</html>
